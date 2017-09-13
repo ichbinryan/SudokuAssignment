@@ -3,7 +3,7 @@ import java.util.Stack;
 /**
  * Created by ryanread on 9/12/17.
  */
-public class scratch {
+public class Search {
 
     public static void informedExplicitSearch(SudBoard initial){
         Stack<SudBoard> stack = new Stack<>();

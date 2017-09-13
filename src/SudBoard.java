@@ -149,7 +149,7 @@ public class SudBoard {
 
     public boolean legalMove(int x, int y, int value){
         for(int i = 0; i<9; i++){
-            System.out.println("Testing: " + Character.getNumericValue(values[i][y].charAt(0)) + " with length " + values[i][y].length());
+            //System.out.println("Testing: " + Character.getNumericValue(values[i][y].charAt(0)) + " with length " + values[i][y].length());
             if(Character.getNumericValue(values[i][y].charAt(0)) == value && values[i][y].length()==1){
                 return false;
             }
@@ -184,7 +184,7 @@ public class SudBoard {
     }
 
     public void printBoard() {
-        System.out.println("What??? "  + values[8][3]);
+        //System.out.println("What??? "  + values[8][3]);
         for (int y = 0; y < 9; y++) {
             for (int x = 0; x < 9; x++) {
                 if(values[x][y].length()!=1) System.out.print("- ");
@@ -222,8 +222,8 @@ public class SudBoard {
         ret[0] = remain; //how many values remain
         ret[1] = x_coord; //the x coordinate
         ret[2] = y_coord; //the y coordinate
-        System.out.println("Remaining value for squares: " + values[x_coord][y_coord]);
-        System.out.println("Assigned thus far: " + assigned);
+        //System.out.println("Remaining value for squares: " + values[x_coord][y_coord]);
+        //System.out.println("Assigned thus far: " + assigned);
         return ret;
     }
 
