@@ -7,8 +7,8 @@ public class SudBoard {
 
     private String possible = "123456789";
     private String[][] values = new String[9][9];
-    private int[][] remaining = new int[9][9];
-    private int assigned;
+    private int[][] remaining = new int[9][9]; //not used
+    private int assigned; //used to determine end state
 
     public SudBoard(int[] inputs){
         int x = 0 , y = 0;
