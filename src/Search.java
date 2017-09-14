@@ -191,7 +191,7 @@ public class Search {
         System.out.println();
 
 
-        for(int i = 0; i<5; i++) { //preprocess
+        for(int i = 0; i<5; i++) { //pre-process
             for (int x1 = 0; x1 < 9; x1++) {
                 for (int y1 = 0; y1 < 9; y1++) {
                     board.removeInitials(x1, y1, board.getVal(x1, y1));
